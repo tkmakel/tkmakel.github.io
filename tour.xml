@@ -166,6 +166,7 @@
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-14.862" atv="20.606" linkedscene="scene_1f_1" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="75.531" atv="18.485" linkedscene="scene_1f_8" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-163.906" atv="27.995" linkedscene="scene_1f_9" />
 
 	</scene>
 
