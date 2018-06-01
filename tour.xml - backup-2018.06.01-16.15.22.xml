@@ -279,7 +279,7 @@
 
 	<scene name="scene_GF6" title="GF6" onstart="" thumburl="panos/GF6.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="84.039" vlookat="-17.491" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="94.716" vlookat="0.150" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/GF6.tiles/preview.jpg" />
 
