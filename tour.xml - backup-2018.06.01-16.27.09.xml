@@ -73,18 +73,7 @@
 		if(startactions !== null, startactions() );
 	</action>
 
-<scene name="scene_GF6" title="GF6" onstart="" thumburl="panos/GF6.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="97.973" vlookat="17.161" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GF6.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/GF6.tiles/pano_%s.jpg" />
-		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="92.695" atv="30.269" linkedscene="scene_gf7" />
-
-	</scene>
 	
 	<scene name="scene_1F_1" title="1F 1" onstart="" thumburl="panos/1F_1.tiles/thumb.jpg" lat="" lng="" heading="">
 
@@ -288,7 +277,18 @@
 
 	</scene>
 
-	
+	<scene name="scene_GF6" title="GF6" onstart="" thumburl="panos/GF6.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="84.039" vlookat="-17.491" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF6.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF6.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="92.695" atv="30.269" linkedscene="scene_gf7" />
+
+	</scene>
 
 	<scene name="scene_GF7" title="GF7" onstart="" thumburl="panos/GF7.tiles/thumb.jpg" lat="" lng="" heading="">
 
