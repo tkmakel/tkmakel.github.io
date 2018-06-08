@@ -74,360 +74,304 @@
 	</action>
 
 
-	<scene name="scene_GF_maingate" title="GF maingate" onstart="true" thumburl="panos/GF_maingate.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="86.544" vlookat="7.174" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GF_maingate.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/GF_maingate.tiles/pano_%s.jpg" />
-		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="84.624" atv="38.296" linkedscene="scene_gf_planter" />
-
-	</scene>
+	
 	<scene name="scene_12F_bathroom" title="12F bathroom" onstart="" thumburl="panos/12F_bathroom.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="122.467" vlookat="15.942" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/12F_bathroom.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/12F_bathroom.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-70.729" atv="59.613" linkedscene="scene_12f_c_flat" />
 
 	</scene>
 
 	<scene name="scene_12F_C_Flat" title="12F C Flat" onstart="" thumburl="panos/12F_C_Flat.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="174.975" vlookat="3.960" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/12F_C_Flat.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/12F_C_Flat.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-12.648" atv="44.911" linkedscene="scene_12f_lobby" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-83.853" atv="54.174" linkedscene="scene_12f_bathroom" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="169.934" atv="24.641" linkedscene="scene_12f_livingroom" />
 
 	</scene>
 
 	<scene name="scene_12F_Lift_Car" title="12F Lift Car" onstart="" thumburl="panos/12F_Lift_Car.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="98.201" vlookat="7.698" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/12F_Lift_Car.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/12F_Lift_Car.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="92.937" atv="79.239" linkedscene="scene_1f_lift_car" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="110.253" atv="36.411" linkedscene="scene_12f_lobby" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="91.342" atv="-61.766" linkedscene="scene_19f_lift_car" />
 
 	</scene>
 
 	<scene name="scene_12F_livingroom" title="12F livingroom" onstart="" thumburl="panos/12F_livingroom.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="85.117" vlookat="12.199" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/12F_livingroom.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/12F_livingroom.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-113.964" atv="16.880" linkedscene="scene_12f_lobby" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-128.646" atv="26.391" linkedscene="scene_12f_bathroom" />
 
 	</scene>
 
 	<scene name="scene_19F_kitchen" title="19F kitchen" onstart="" thumburl="panos/19F_kitchen.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="463.844" vlookat="19.687" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/19F_kitchen.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/19F_kitchen.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-129.334" atv="37.120" linkedscene="scene_19f_livingroom" />
 
 	</scene>
 
 	<scene name="scene_19F_Lift_Car" title="19F Lift Car" onstart="" thumburl="panos/19F_Lift_Car.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="98.186" vlookat="2.140" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/19F_Lift_Car.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/19F_Lift_Car.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="90.562" atv="69.795" linkedscene="scene_12f_lift_car" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="96.248" atv="45.662" linkedscene="scene_19f_lobby" />
 
 	</scene>
 
 	<scene name="scene_19F_Livingroom" title="19F Livingroom" onstart="" thumburl="panos/19F_Livingroom.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="96.024" vlookat="8.478" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/19F_Livingroom.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/19F_Livingroom.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-6.266" atv="21.819" linkedscene="scene_19f_kitchen" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-108.535" atv="25.469" linkedscene="scene_19f_lobby" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="5.676" atv="14.352" linkedscene="scene_19f_masterbedroom_2" />
 
 	</scene>
 
 	<scene name="scene_1F_Lobby" title="1F Lobby" onstart="" thumburl="panos/1F_Lobby.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="184.886" vlookat="7.324" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/1F_Lobby.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/1F_Lobby.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="12.876" atv="44.962" linkedscene="scene_1f_lift_car" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-125.080" atv="26.471" linkedscene="scene_1f_cl" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="97.535" atv="16.303" linkedscene="scene_1f_club_house" />
 
 	</scene>
 
 	<scene name="scene_12F_Lobby" title="12F Lobby" onstart="" thumburl="panos/12F_Lobby.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="40.181" vlookat="27.397" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/12F_Lobby.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/12F_Lobby.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="15.491" atv="35.297" linkedscene="scene_12f_lift_car" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="56.918" atv="23.025" linkedscene="scene_12f_c_flat" />
 
 	</scene>
 
 	<scene name="scene_19F_Lobby" title="19F Lobby" onstart="" thumburl="panos/19F_Lobby.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="79.399" vlookat="24.996" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/19F_Lobby.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/19F_Lobby.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="41.628" atv="34.885" linkedscene="scene_19f_lift_car" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="100.864" atv="44.156" linkedscene="scene_19f_livingroom" />
 
 	</scene>
 
 	<scene name="scene_19F_MasterBathroom" title="19F MasterBathroom" onstart="" thumburl="panos/19F_MasterBathroom.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-230.939" vlookat="12.991" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/19F_MasterBathroom.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/19F_MasterBathroom.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-66.890" atv="53.602" linkedscene="scene_19f_masterbedroom" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-35.675" atv="26.506" linkedscene="scene_19f_livingroom" />
 
 	</scene>
 
 	<scene name="scene_19F_MasterBedRoom_2" title="19F MasterBedRoom 2" onstart="" thumburl="panos/19F_MasterBedRoom_2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="210.993" vlookat="6.061" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/19F_MasterBedRoom_2.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/19F_MasterBedRoom_2.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-142.592" atv="26.675" linkedscene="scene_19f_masterbedroom" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-56.597" atv="47.561" linkedscene="scene_19f_livingroom" />
 
 	</scene>
 
 	<scene name="scene_19F_MasterBedRoom" title="19F MasterBedRoom" onstart="" thumburl="panos/19F_MasterBedRoom.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="66.710" vlookat="7.415" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/19F_MasterBedRoom.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/19F_MasterBedRoom.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="170.007" atv="21.010" linkedscene="scene_19f_livingroom" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-153.128" atv="35.732" linkedscene="scene_19f_masterbathroom" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="-172.480" atv="21.014" linkedscene="scene_19f_masterbedroom_2" />
 
 	</scene>
 
 	<scene name="scene_1F_CL_2" title="1F CL 2" onstart="" thumburl="panos/1F_CL_2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-89.872" vlookat="12.321" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/1F_CL_2.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/1F_CL_2.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="98.002" atv="12.099" linkedscene="scene_1f_cl" />
 
 	</scene>
 
 	<scene name="scene_1F_CL" title="1F CL" onstart="" thumburl="panos/1F_CL.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="108.459" vlookat="12.169" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/1F_CL.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/1F_CL.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="2.772" atv="40.957" linkedscene="scene_1f_lobby" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="100.395" atv="16.397" linkedscene="scene_1f_cl_2" />
 
 	</scene>
 
 	<scene name="scene_1F_Club_House_2" title="1F Club House 2" onstart="" thumburl="panos/1F_Club_House_2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-279.340" vlookat="10.662" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/1F_Club_House_2.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/1F_Club_House_2.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="102.318" atv="15.373" linkedscene="scene_1f_club_house" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="68.924" atv="11.062" linkedscene="scene_1f_gym" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="-66.822" atv="35.992" linkedscene="scene_1f_gym_2" />
 
 	</scene>
 
 	<scene name="scene_1F_Club_House" title="1F Club House" onstart="" thumburl="panos/1F_Club_House.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="180.731" vlookat="3.737" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/1F_Club_House.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/1F_Club_House.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-12.380" atv="23.116" linkedscene="scene_1f_lobby" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="84.235" atv="17.856" linkedscene="scene_1f_club_house_2" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="-151.627" atv="28.480" linkedscene="scene_1f_gym" />
 
 	</scene>
 
 	<scene name="scene_1F_GYM_2" title="1F GYM 2" onstart="" thumburl="panos/1F_GYM_2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-85.601" vlookat="22.733" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/1F_GYM_2.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/1F_GYM_2.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="85.876" atv="37.193" linkedscene="scene_1f_gym" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="172.810" atv="28.040" linkedscene="scene_1f_club_house_2" />
 
 	</scene>
 
 	<scene name="scene_1F_GYM" title="1F GYM" onstart="" thumburl="panos/1F_GYM.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="99.844" vlookat="16.442" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/1F_GYM.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/1F_GYM.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-69.190" atv="37.417" linkedscene="scene_1f_club_house" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="86.805" atv="32.236" linkedscene="scene_1f_gym_2" />
 
 	</scene>
 
 	<scene name="scene_1F_Lift_car" title="1F Lift car" onstart="" thumburl="panos/1F_Lift_car.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="91.466" vlookat="5.065" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/1F_Lift_car.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/1F_Lift_car.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="87.190" atv="80.411" linkedscene="scene_gf_lift_car" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="92.029" atv="38.097" linkedscene="scene_1f_lobby" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="82.635" atv="-54.750" linkedscene="scene_12f_lift_car" />
 
 	</scene>
 
 	<scene name="scene_GF_EX" title="GF EX" onstart="" thumburl="panos/GF_EX.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-54.270" vlookat="5.206" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/GF_EX.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/GF_EX.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="36.912" atv="17.019" linkedscene="scene_gf_lobby" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="101.959" atv="6.743" linkedscene="scene_gf_planter" />
 
 	</scene>
 
 	<scene name="scene_GF_Lift_car" title="GF Lift car" onstart="" thumburl="panos/GF_Lift_car.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="88.273" vlookat="2.366" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/GF_Lift_car.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/GF_Lift_car.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="89.085" atv="36.585" linkedscene="scene_gf_lobby" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="87.545" atv="-47.191" linkedscene="scene_1f_lift_car" />
 
 	</scene>
 
 	<scene name="scene_GF_Lobby" title="GF Lobby" onstart="" thumburl="panos/GF_Lobby.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="178.927" vlookat="-0.061" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/GF_Lobby.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/GF_Lobby.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.645" atv="26.317" linkedscene="scene_gf_planter" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="111.317" atv="20.622" linkedscene="scene_gf_ex" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="-80.602" atv="30.217" linkedscene="scene_gf_lift_car" />
 
 	</scene>
 
-	
+	<scene name="scene_GF_maingate" title="GF maingate" onstart="" thumburl="panos/GF_maingate.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_maingate.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_maingate.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
 
 	<scene name="scene_GF_Planter" title="GF Planter" onstart="" thumburl="panos/GF_Planter.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="93.024" vlookat="7.298" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/GF_Planter.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/GF_Planter.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-92.715" atv="26.024" linkedscene="scene_gf_maingate" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="92.067" atv="7.296" linkedscene="scene_gf_lobby" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="62.902" atv="6.639" linkedscene="scene_gf_ex" />
 
 	</scene>
 
