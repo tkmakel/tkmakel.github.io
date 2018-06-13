@@ -158,7 +158,63 @@
 			skin_lookat( get(xml.view.hlookat) );
 		);
 	</action>
+    <action name="add_all_the_time_tooltip_for_VR">
+	
+	 txtadd(tooltipname, 'vrtooltip_', get(name));
+	 addhotspot(get(tooltipname)); 
+	 set(hotspot[get(tooltipname)],
+		type=text,
+		edge=get(hotspot[get(name)].edge),
+		distorted=get(hotspot[get(name)].distorted),
+		ath=get(hotspot[get(name)].ath),
+		atv=get(hotspot[get(name)].atv),
+		oy=-50,
+		ox=0,
+		vcenter=true,
+		padding=10,
+		mipmapping=true,
+		oversampling=2,
+		bg=true,
+		bgcolor=0x000000,
+		bgroundedge=5,
+		bgalpha=0.65,
+		bgborder=0,
+		bgshadow='0 0 0 0x000000 0',
+		css=calc(device.mobile ? 'text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:20px;':'text-align:left; color:#FFFFFF; font-family:MicrosoftYahei; font-size:20px;'),
+		txtshadow='0 0 0 0x000000 0';
+		enabled=false,
+        );
+	 if(text == '' OR text === null,
 
+		 copy(hotspot[get(tooltipname)].html,scene[get(linkedscene)].title),
+		 copy(hotspot[get(tooltipname)].html,text);
+ 
+	 ); 
+	 if(lp_running == false,
+	 	set(hotspot[get(tooltipname)].visible,true); 
+	 	, 	
+	 	if(!webvr.isenabled,
+	 	  if(lp_running == true,
+		 	set(hotspot[get(tooltipname)].visible,false); 
+		 	set(hotspot[get(tooltipname)].mark2,true);
+	 	   );
+	 	  );
+	 	);
+	 if(hotspot[get(name)].normal == false, 
+
+		set(hotspot[get(tooltipname)].normal,false);
+		set(hotspot[get(tooltipname)].onloaded,
+			if(webvr.isenabled,
+				set(visible,false);
+				,	
+				if(lp_running == false OR lp_running == null OR lp_running === null,  
+					set(visible,true);
+					);
+				);
+	       );
+
+	 	);
+</action>
 	<action name="skin_webvr_setup">
 		if(webvr.isenabled,
 			copy(skin_settings.loadscene_flags_backup, skin_settings.loadscene_flags);
@@ -265,6 +321,33 @@
 	       onout="tween(scale,0.5);"
 	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );"
 	       />
+    <style name="skin_moonhotspotstyle" url="moon_50.png" scale="0.5" edge="top" distorted="true"
+	       tooltip=""
+	       linkedscene=""
+	       linkedscene_lookat=""
+	       onclick="skin_hotspotstyle_click();"
+	       onover="tween(scale,0.55);"
+	       onout="tween(scale,0.5);"
+	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );"
+	       />
+    <style name="skin_sunhotspotstyle" url="sun.png" scale="0.5" edge="top" distorted="true"
+	       tooltip=""
+	       linkedscene=""
+	       linkedscene_lookat=""
+	       onclick="skin_hotspotstyle_click();"
+	       onover="tween(scale,0.55);"
+	       onout="tween(scale,0.5);"
+	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );"
+	       />
+	<style name="skin_hotspotdownstyle" url="vtourskin_downhotspot.png" scale="0.5" edge="top" distorted="true"
+	       tooltip=""
+	       linkedscene=""
+	       linkedscene_lookat=""
+	       onclick="skin_hotspotstyle_click();"
+	       onover="tween(scale,0.55);"
+	       onout="tween(scale,0.5);"
+	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );"
+	       />
 
 	<action name="skin_hotspotstyle_click" scope="local">
 		if(caller.linkedscene,
@@ -280,32 +363,6 @@
 		);
 	</action>
 	
-		<!-- skin_hotspotstyle_down - style for the hotspots -->
-	<style name="skin_hotspotstyle_down" url="vtourskin_hotspot_down.png" scale="0.5" edge="top" distorted="true"
-	       tooltip=""
-	       linkedscene=""
-	       linkedscene_lookat=""
-	       onclick="skin_hotspotstyle_click_down();"
-	       onover="tween(scale,0.55);"
-	       onout="tween(scale,0.5);"
-	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );"
-	       />
-
-	<action name="skin_hotspotstyle_click_down" scope="local">
-		if(caller.linkedscene,
-			copy(hs_linkedscene, caller.linkedscene);
-			if(caller.linkedscene_lookat, txtsplit(caller.linkedscene_lookat, ',', hs_lookat_h, hs_lookat_v, hs_lookat_fov); );
-			set(caller.enabled, false);
-			skin_hidetooltips();
-			tween(caller.depth|caller.alpha|caller.oy|caller.rx, 4000|0.0|-50|-60, 0.5, default,
-				skin_loadscene(get(hs_linkedscene), get(skin_settings.loadscene_blend));
-				if(hs_lookat_h !== null, skin_lookat(get(hs_lookat_h), get(hs_lookat_v), get(hs_lookat_fov)); );
-				skin_updatescroll();
-			);
-		);
-	</action>
-	
-
 	<!-- skin_tooltip - style for the thumb, hotspot and mapspot tooltips -->
 	<style name="skin_tooltips"
 	       onover.mouse="copy(layer[skin_tooltip].html, tooltip);

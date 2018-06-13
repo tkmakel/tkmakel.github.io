@@ -83,7 +83,7 @@
 		<image>
 			<cube url="panos/GF_maingate.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="84.624" atv="38.296" linkedscene="scene_gf_planter" />
+		<hotspot name="spot1" style="skin_hotspotstyle_down" ath="84.624" atv="38.296" linkedscene="scene_gf_planter" />
 
 	</scene>
 	<scene name="scene_12F_bathroom" title="12F bathroom" onstart="" thumburl="panos/12F_bathroom.tiles/thumb.jpg" lat="" lng="" heading="">
