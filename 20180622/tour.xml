@@ -745,7 +745,7 @@
 			<cube url="panos/12F_BedRoom_Corner_1.tiles/pano_%s.jpg" />
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-29.820" atv="26.670" linkedscene="scene_12f_bathroom" />
-		<hotspot name="spot2" style="skin_maphotspotstyle" ath="58.361" atv="34.779" linkedscene="scene_12f_bedroom_corner_2" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="58.361" atv="34.779" linkedscene="scene_12f_new_corner" />
 
 	</scene>
 
