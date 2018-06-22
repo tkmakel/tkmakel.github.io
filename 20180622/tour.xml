@@ -601,7 +601,7 @@
 		<hotspot name="spot1" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="90.377" atv="10.181" linkedscene="scene_gf_lobby" />
 		<hotspot name="spot2" style="skin_hotspotstyle" text="Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="62.001" atv="2.200" linkedscene="scene_gf_landscape" />
 		<hotspot name="spot3" style="skin_hotspotstyle" text="Car Lift" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="114.317" atv="3.647" linkedscene="scene_gf_carlift" />
-		<hotspot name="spot4" style="skin_hotspotstyle" text="Entrance" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-97.707" atv="4.808" linkedscene="scene_gf_maingate" />
+		<hotspot name="spot4" style="skin_hotspotstyle" text="Entrance" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-87.531" atv="15.861" linkedscene="scene_gf_maingate" />
 
 	</scene>
     <scene name="scene_GF_Car_Gate" title="GF Car Gate" onstart="" thumburl="panos/GF_Car_Gate.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -745,7 +745,7 @@
 			<cube url="panos/12F_BedRoom_Corner_1.tiles/pano_%s.jpg" />
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-29.820" atv="26.670" linkedscene="scene_12f_bathroom" />
-		<hotspot name="spot2" style="skin_maphotspotstyle" ath="58.361" atv="34.779" linkedscene="scene_12f_new_corner" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="45.891" atv="31.432" linkedscene="scene_12f_new_corner" />
 
 	</scene>
 
@@ -904,7 +904,7 @@
 		<image>
 			<cube url="panos/12F_NEW_Corner.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-98.021" atv="30.630" linkedscene="scene_12f_bathroom" />
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-103.215" atv="28.974" linkedscene="scene_12f_bathroom" />
 		<hotspot name="spot2" style="skin_maphotspotstyle" ath="148.716" atv="34.320" linkedscene="scene_12f_bedroom_corner_1" />
 
 	</scene>
