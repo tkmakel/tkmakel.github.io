@@ -226,16 +226,16 @@
 
 	<scene name="scene_12F_Flat_C" title="12F Flat C" onstart="" thumburl="panos/12F_Flat_C.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="117.710" vlookat="27.142" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="100.895" vlookat="7.039" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/12F_Flat_C.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/12F_Flat_C.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-174.103" atv="35.864" linkedscene="scene_12f_bathroom" />
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-177.916" atv="10.303" linkedscene="scene_12f_bathroom" />
 		<hotspot name="spot2" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-98.665" atv="6.951" linkedscene="scene_12f_lobby" />
-		<hotspot name="spot3" style="skin_hotspotstyle" text="Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="122.337" atv="35.370" linkedscene="scene_12f_lobby_flat_c_bedroom" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="118.113" atv="14.642" linkedscene="scene_12f_lobby_flat_c_bedroom" />
 		<hotspot name="spot4" style="skin_hotspotstyle" text="Living Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="84.608" atv="42.231" linkedscene="scene_12f_living_room_2" />
 		<hotspot name="spot5" style="skin_maphotspotstyle" ath="101.172" atv="19.948" linkedscene="scene_12f_living_room_corner_2" />
 		<hotspot name="spot6" style="skin_maphotspotstyle" ath="68.892" atv="18.331" linkedscene="scene_12f_living_room_corner_1" />
