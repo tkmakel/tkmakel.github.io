@@ -622,15 +622,15 @@
 	</scene>
     <scene name="scene_GF_Car_Gate" title="GF Car Gate" onstart="" thumburl="panos/GF_Car_Gate.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="91.591" vlookat="18.498" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="59.190" vlookat="6.287" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/GF_Car_Gate.tiles/preview.jpg" />
 
 		<image>
 			<cube url="panos/GF_Car_Gate.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" text="Main Gate" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="6.210" atv="3.983" linkedscene="scene_gf_maingate" />
-		<hotspot name="spot2" style="skin_hotspotstyle" text="Car Lift" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="90.012" atv="35.964" linkedscene="scene_gf_carlift" />
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Main Gate" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-26.741" atv="2.188" linkedscene="scene_gf_maingate" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Car Lift" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="57.475" atv="36.628" linkedscene="scene_gf_carlift" />
 
 	</scene>
 
