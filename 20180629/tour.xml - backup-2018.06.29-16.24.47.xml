@@ -671,7 +671,7 @@
 			<cube url="panos/GF_Landerscape3.tiles/pano_%s.jpg" />
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" text="Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-88.975" atv="5.707" linkedscene="scene_gf_landscape" />
-		<hotspot name="spot2" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-50.949" atv="6.846" linkedscene="scene_gf_lobby_corner_3" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-50.949" atv="6.846" linkedscene="scene_gf_lobby" />
 		<hotspot name="spot3" style="skin_hotspotstyle" text="Car Lift" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-29.164" atv="5.295" linkedscene="scene_gf_carlift" />
 
 	</scene>
