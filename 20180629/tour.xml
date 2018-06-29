@@ -686,9 +686,9 @@
 			<cube url="panos/GF_Lobby_Corner_1.tiles/pano_%s.jpg" />
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="29.844" atv="25.338" linkedscene="scene_gf_liftcar_60_light" />
-		<hotspot name="spot2" style="skin_maphotspotstyle" ath="38.656" atv="15.086" linkedscene="scene_gf_mailbox" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="38.656" atv="15.086" linkedscene="scene_gf_lobby_corner_2" />
 		<hotspot name="spot3" style="skin_maphotspotstyle" ath="89.069" atv="8.865" linkedscene="scene_gf_lobby_corner_3" />
-		<hotspot name="spot4" style="skin_maphotspotstyle" ath="133.290" atv="6.386" linkedscene="scene_gf_lobby_corner_3" />
+		<hotspot name="spot4" style="skin_maphotspotstyle" ath="133.290" atv="6.386" linkedscene="scene_gf_lobby_corner4" />
 
 	</scene>
 
@@ -704,7 +704,7 @@
 		<hotspot name="spot1" style="skin_maphotspotstyle" ath="92.124" atv="10.626" linkedscene="scene_gf_lobby_corner_1" />
 		<hotspot name="spot2" style="skin_maphotspotstyle" ath="53.242" atv="14.151" linkedscene="scene_gf_lobby_corner_3" />
 		<hotspot name="spot3" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="175.080" atv="45.811" linkedscene="scene_gf_liftcar_60_light" />
-		<hotspot name="spot4" style="skin_maphotspotstyle" ath="151.987" atv="16.957" linkedscene="scene_gf_mailbox" />
+		<hotspot name="spot4" style="skin_maphotspotstyle" ath="151.987" atv="16.957" linkedscene="scene_gf_lobby_corner_1" />
 
 	</scene>
 
