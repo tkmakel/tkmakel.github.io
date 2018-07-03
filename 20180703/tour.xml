@@ -282,9 +282,9 @@
 		<image>
 			<cube url="panos/19F_BR3.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" text="Master Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-138.363" atv="18.925" linkedscene="scene_19F_MasterBedRoom" />
-        <hotspot name="spot2" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-25.593" atv="39.521" linkedscene="scene_19f_corridor" />
-		<hotspot name="spot3" style="skin_hotspotstyle" text="Master Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="179.682" atv="48.128" linkedscene="scene_19f_masterbathroom" />
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Master Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-137.272" atv="18.343" linkedscene="scene_19F_MasterBedRoom" />
+        <hotspot name="spot2" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-19.367" atv="13.019" linkedscene="scene_19f_corridor" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Master Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="177.724" atv="22.602" linkedscene="scene_19f_masterbathroom" />
 	</scene>
 
 	<scene name="scene_19F_Kitchen" title="19F Kitchen" onstart="" thumburl="panos/19F_Kitchen.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -310,7 +310,7 @@
 			<cube url="panos/19F_Lift_Car.tiles/pano_%s.jpg" />
 		</image>
 		<hotspot name="spot1" style="skin_hotspotdownstyle" text="To 12F" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="57.076" atv="34.535" linkedscene="scene_12f_liftcar_60_light" />
-		<hotspot name="spot2" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="100.481" atv="22.707" linkedscene="scene_19f_lobby" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="97.291" atv="12.996" linkedscene="scene_19f_lobby" />
 
 	</scene>
 
