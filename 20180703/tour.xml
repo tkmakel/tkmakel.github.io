@@ -494,7 +494,7 @@
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" text="Covered Landscape" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="170.000" atv="1.527" linkedscene="scene_1f_covered_landscape" />
 		<hotspot name="spot2" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="20.114" atv="17.994" linkedscene="scene_1f_liftcar_60_light" />
-		<hotspot name="spot3" style="skin_hotspotstyle" text="Club House" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="64.067" atv="3.159" linkedscene="scene_1f_function_room" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Club House" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="64.433" atv="9.109" linkedscene="scene_1f_function_room" />
 
 	</scene>
 
