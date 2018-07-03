@@ -701,7 +701,7 @@
 		<image>
 			<cube url="panos/GF_Lobby_Corner_2.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_maphotspotstyle" ath="92.124" atv="10.626" linkedscene="scene_gf_lobby_corner_1" />
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="92.124" atv="10.626" linkedscene="scene_gf_lobby_corner4" />
 		<hotspot name="spot2" style="skin_maphotspotstyle" ath="53.242" atv="14.151" linkedscene="scene_gf_lobby_corner_3" />
 		<hotspot name="spot3" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-178.708" atv="18.495" linkedscene="scene_gf_liftcar_60_light" />
 		<hotspot name="spot4" style="skin_maphotspotstyle" ath="151.987" atv="16.957" linkedscene="scene_gf_lobby_corner_1" />
