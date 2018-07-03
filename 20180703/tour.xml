@@ -837,7 +837,7 @@
 		<hotspot name="spot1" style="skin_maphotspotstyle" ath="44.037" atv="28.841" linkedscene="scene_12f_living_room_corner_1" />
 		
 		<hotspot name="spot3" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))"  ath="-70.920" atv="18.009" linkedscene="scene_12f_lobby" />
-		<hotspot name="spot2" text="Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" style="skin_hotspotstyle" ath="-93.582" atv="51.492" linkedscene="scene_12f_lobby_flat_c_bedroom" />
+		<hotspot name="spot2" text="Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" style="skin_hotspotstyle" ath="-93.762" atv="22.104" linkedscene="scene_12f_lobby_flat_c_bedroom" />
 		
 
 	</scene>
@@ -897,7 +897,7 @@
 			<cube url="panos/19F_Bedroom1_Corner1.tiles/pano_%s.jpg" />
 		</image>
 		<hotspot name="spot1" style="skin_maphotspotstyle" ath="62.319" atv="30.157" linkedscene="scene_19f_bedroom1_corner2" />
-		<hotspot name="spot2" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-52.014" atv="10.228" linkedscene="scene_19f_corridor" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-47.996" atv="22.204" linkedscene="scene_19f_corridor" />
 
 	</scene>
 
