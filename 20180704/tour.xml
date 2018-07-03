@@ -282,9 +282,7 @@
 		<image>
 			<cube url="panos/19F_BR3.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" text="Master Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-137.272" atv="18.343" linkedscene="scene_19F_
-		
-		" />
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Master Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-137.272" atv="18.343" linkedscene="scene_19f_masterbedroom" />
         <hotspot name="spot2" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-19.367" atv="13.019" linkedscene="scene_19f_corridor" />
 		<hotspot name="spot3" style="skin_hotspotstyle" text="Master Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="177.724" atv="22.602" linkedscene="scene_19f_masterbathroom" />
 	</scene>
