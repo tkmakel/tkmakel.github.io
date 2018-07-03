@@ -1,0 +1,1018 @@
+﻿<krpano version="1.19" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               gyro="true"
+	               webvr="true"
+	               webvr_gyro_keeplookingdirection="false"
+	               webvr_prev_next_hotspots="true"
+	               littleplanetintro="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="true"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext="loading..."
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.s
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<include url="skin/vtourskin_design_ultra_light.xml" />
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+
+
+	<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+    
+	<scene name="scene_GF_MainGate" title="GF MainGate" onstart="" thumburl="panos/GF_MainGate.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="93.472" vlookat="4.366" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_MainGate.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_MainGate.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Covered Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="86.440" atv="15.104" linkedscene="scene_gf_planter" />
+        <hotspot name="spot2" style="skin_hotspotstyle" text="Car Gate" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="163.135" atv="11.406" linkedscene="scene_Gf_Car_Gate" />
+	</scene>
+	
+	<scene name="scene_12F_Living_Room_2" title="12F Living Room 2" onstart="" thumburl="panos/12F_Living_Room_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="27.645" vlookat="21.072" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Living_Room_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Living_Room_2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-5.229" atv="36.185" linkedscene="scene_12f_lobby_flat_c_bedroom" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="41.871" atv="27.289" linkedscene="scene_12f_bathroom" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="69.719" atv="21.673" linkedscene="scene_12f_lobby" />
+		<hotspot name="spot4" style="skin_maphotspotstyle" ath="-116.807" atv="32.113" linkedscene="scene_12f_living_room_corner_1" />
+		<hotspot name="spot5" style="skin_maphotspotstyle" ath="-61.190" atv="31.516" linkedscene="scene_12f_living_room_corner_2" />
+
+	</scene>
+
+	<scene name="scene_12F_Lobby_FLAT_A" title="12F Lobby FLAT A" onstart="" thumburl="panos/12F_Lobby_FLAT_A.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-92.286" vlookat="1.601" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Lobby_FLAT_A.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Lobby_FLAT_A.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="90.582" atv="8.068" linkedscene="scene_12f_lobby" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Flat C" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="79.695" atv="16.971" linkedscene="scene_12f_flat_c" />
+
+	</scene>
+
+	<scene name="scene_12F_Lobby_FLAT_C_Bedroom" title="12F Lobby FLAT C Bedroom" onstart="" thumburl="panos/12F_Lobby_FLAT_C_Bedroom.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Lobby_FLAT_C_Bedroom.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Lobby_FLAT_C_Bedroom.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Living Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="10.913" atv="17.270" linkedscene="scene_12f_living_room_2" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="64.035" atv="26.505" linkedscene="scene_12f_new_corner" />
+		<hotspot name="spot3" style="skin_maphotspotstyle" ath="110.700" atv="30.527" linkedscene="scene_12f_bedroom_corner_1" />
+
+	</scene>
+
+	<scene name="scene_12F_Lobby_FLAT_F" title="12F Lobby FLAT F" onstart="" thumburl="panos/12F_Lobby_FLAT_F.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-91.362" vlookat="3.875" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Lobby_FLAT_F.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Lobby_FLAT_F.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Flat C" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="96.654" atv="13.499" linkedscene="scene_12f_flat_c" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Flat A" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="87.980" atv="8.027" linkedscene="scene_12f_lobby_flat_a" />
+
+	</scene>
+
+	<scene name="scene_19F_BedRoom_2" title="19F BedRoom 2" onstart="" thumburl="panos/19F_BedRoom_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="103.344" vlookat="7.696" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_BedRoom_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_BedRoom_2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-81.197" atv="51.780" linkedscene="scene_19f_corridor" />
+		<hotspot name="spot2" style="skin_maphotspotstyle"  ath="123.340" atv="45.000" linkedscene="scene_19f_bedroom1_corner1" />
+		<hotspot name="spot3" style="skin_maphotspotstyle" ath="53.830" atv="30.439" linkedscene="scene_19f_bedroom2_corner1" />
+
+	</scene>
+
+	<scene name="scene_19F_BedRoom_3" title="19F BedRoom 3" onstart="" thumburl="panos/19F_BedRoom_3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="88.783" vlookat="1.398" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_BedRoom_3.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_BedRoom_3.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-72.364" atv="41.565" linkedscene="scene_19f_corridor" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="114.458" atv="29.525" linkedscene="scene_19f_bedroom2_corner2" />
+		<hotspot name="spot3" style="skin_maphotspotstyle" ath="60.177" atv="27.652" linkedscene="scene_19f_bedroom2_corner1" />
+
+	</scene>
+
+	<scene name="scene_19F_Living_Room_VER1" title="19F Living Room VER1" onstart="" thumburl="panos/19F_Living_Room_VER1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="129.395" vlookat="6.937" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Living_Room_VER1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Living_Room_VER1.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="21.920" atv="10.966" linkedscene="scene_19f_lobby" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Kitchen" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="89.166" atv="11.046" linkedscene="scene_19f_kitchen" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Corridor" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="97.780" atv="4.520" linkedscene="scene_19f_corridor" />
+		<hotspot name="spot4" style="skin_maphotspotstyle" ath="125.466" atv="10.457" linkedscene="scene_19f_living_room_2" />
+		
+		
+
+	</scene>
+
+	<scene name="scene_1F_Function_Room_2" title="1F Function Room 2" onstart="" thumburl="panos/1F_Function_Room_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="107.431" vlookat="7.404" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1F_Function_Room_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1F_Function_Room_2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Function Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="101.758" atv="8.842" linkedscene="scene_1f_function_room" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Changing Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-171.323" atv="23.493" linkedscene="scene_1f_changing_room" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="GYM" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="64.988" atv="4.504" linkedscene="scene_1f_gym" />
+
+	</scene>
+	
+	<scene name="scene_12F_Bathroom" title="12F Bathroom" onstart="" thumburl="panos/12F_Bathroom.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="92.077" vlookat="6.932" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Bathroom.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Bathroom.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Open Kitchen" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-105.611" atv="20.529" linkedscene="scene_12f_flat_c" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="76.248" atv="44.308" linkedscene="scene_12f_bathroom_2" />
+		<hotspot name="spot3" style="skin_maphotspotstyle" ath="75.383" atv="26.418" linkedscene="scene_12f_bathroom_3" />
+
+	</scene>
+
+	<scene name="scene_12F_Flat_C" title="12F Flat C" onstart="" thumburl="panos/12F_Flat_C.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="117.710" vlookat="27.142" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Flat_C.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Flat_C.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-174.103" atv="35.864" linkedscene="scene_12f_bathroom" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-98.665" atv="6.951" linkedscene="scene_12f_lobby" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="122.337" atv="35.370" linkedscene="scene_12f_lobby_flat_c_bedroom" />
+		<hotspot name="spot4" style="skin_hotspotstyle" text="Living Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="84.608" atv="42.231" linkedscene="scene_12f_living_room_2" />
+		<hotspot name="spot5" style="skin_maphotspotstyle" ath="101.172" atv="19.948" linkedscene="scene_12f_living_room_corner_2" />
+		<hotspot name="spot6" style="skin_maphotspotstyle" ath="68.892" atv="18.331" linkedscene="scene_12f_living_room_corner_1" />
+
+	</scene>
+
+	<scene name="scene_12F_LiftCar_60_light" title="12F LiftCar 60%light" onstart="" thumburl="panos/12F_LiftCar_60_light.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="93.131" vlookat="7.452" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_LiftCar_60_light.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_LiftCar_60_light.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="To 19F" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="126.073" atv="-11.385" linkedscene="scene_19f_lift_car" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="86.898" atv="31.998" linkedscene="scene_12f_lobby" />
+		<hotspot name="spot3" style="skin_hotspotdownstyle" text="To 1F" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="60.147" atv="34.472" linkedscene="scene_1F_LiftCar_60_light" />
+
+	</scene>
+
+	<scene name="scene_12F_Lobby" title="12F Lobby" onstart="" thumburl="panos/12F_Lobby.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="72.766" vlookat="7.479" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Lobby.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Lobby.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Flat C" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="70.357" atv="11.721" linkedscene="scene_12f_flat_c" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="31.523" atv="24.980" linkedscene="scene_12f_liftcar_60_light" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Flat A" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="57.518" atv="7.828" linkedscene="scene_12f_lobby_flat_a" />
+		<hotspot name="spot4" style="skin_hotspotstyle" text="Flat F" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-127.758" atv="7.702" linkedscene="scene_12f_lobby_flat_f" />
+
+	</scene>
+
+	<scene name="scene_19F_BR3" title="19F BR3" onstart="" thumburl="panos/19F_BR3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="211.747" vlookat="14.467" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_BR3.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_BR3.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Master Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-138.363" atv="18.925" linkedscene="scene_19F_MasterBedRoom" />
+        <hotspot name="spot2" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-25.593" atv="39.521" linkedscene="scene_19f_corridor" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Master Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="179.682" atv="48.128" linkedscene="scene_19f_masterbathroom" />
+	</scene>
+
+	<scene name="scene_19F_Kitchen" title="19F Kitchen" onstart="" thumburl="panos/19F_Kitchen.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="101.551" vlookat="24.109" vlookatmax="80" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" />
+
+		<preview url="panos/19F_Kitchen.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Kitchen.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Living Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-103.283" atv="39.055" linkedscene="scene_19f_living_room" />
+
+	</scene>
+
+	<scene name="scene_19F_Lift_Car" title="19F Lift Car" onstart="" thumburl="panos/19F_Lift_Car.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="89.833" vlookat="5.206" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Lift_Car.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Lift_Car.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotdownstyle" text="To 12F" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="58.070" atv="39.436" linkedscene="scene_12f_liftcar_60_light" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="100.481" atv="22.707" linkedscene="scene_19f_lobby" />
+
+	</scene>
+
+	<scene name="scene_19F_Living_Room" title="19F Living Room" onstart="" thumburl="panos/19F_Living_Room.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="134.561" vlookat="6.971" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Living_Room.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Living_Room.tiles/pano_%s.jpg" />
+		</image>
+		
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Kitchen" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="61.598" atv="17.890" linkedscene="scene_19f_kitchen_1" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-49.090" atv="18.771" linkedscene="scene_19f_lobby" />
+		<hotspot name="spot4" style="skin_maphotspotstyle" ath="-169.521" atv="22.530" linkedscene="scene_19f_living_room_ver1" />
+		
+		
+		<hotspot name="spot7" style="skin_maphotspotstyle" ath="102.081" atv="12.252" linkedscene="scene_19f_living_room_2" />
+		<hotspot name="spot8" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="66.583" atv="8.542" linkedscene="scene_19f_corridor" />
+
+	</scene>
+
+	<scene name="scene_19F_Lobby" title="19F Lobby" onstart="" thumburl="panos/19F_Lobby.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="102.265" vlookat="3.506" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Lobby.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Lobby.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Flat A" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="96.875" atv="8.972" linkedscene="scene_19f_living_room" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="54.282" atv="10.710" linkedscene="scene_19f_lift_car" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="70.998" atv="17.807" linkedscene="scene_19f_lobby_2" />
+
+	</scene>
+
+	<scene name="scene_19F_MasterBathroom" title="19F MasterBathroom" onstart="" thumburl="panos/19F_MasterBathroom.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="97.337" vlookat="17.619" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_MasterBathroom.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_MasterBathroom.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Master Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-97.776" atv="41.161" linkedscene="scene_19f_masterbedroom" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="-177.617" atv="40.187" linkedscene="scene_19f_bathroom_2" />
+		
+
+	</scene>
+
+	<scene name="scene_19F_MasterBedRoom" title="19F MasterBedRoom" onstart="" thumburl="panos/19F_MasterBedRoom.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="116.601" vlookat="5.951" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_MasterBedRoom.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_MasterBedRoom.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-141.287" atv="20.949" linkedscene="scene_19f_corridor" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Bedroom (3)" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-120.492" atv="18.953" linkedscene="scene_19f_br3" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Master Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-94.467" atv="30.628" linkedscene="scene_19f_masterbathroom" />
+		<hotspot name="spot4" style="skin_maphotspotstyle" ath="75.605" atv="30.097" linkedscene="scene_19f_masterbedroom_corner_1" />
+		
+
+	</scene>
+
+	<scene name="scene_1F_Changing_Room" title="1F Changing Room" onstart="" thumburl="panos/1F_Changing_Room.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="80.957" vlookat="16.330" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1F_Changing_Room.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1F_Changing_Room.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Exit" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="103.026" atv="8.606" linkedscene="scene_1f_function_room" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="GYM" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="71.405" atv="3.370" linkedscene="scene_1f_gym" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="GYM" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-17.451" atv="4.411" linkedscene="scene_1f_locker" />
+
+	</scene>
+
+	<scene name="scene_1F_Covered_Landscape_2" title="1F Covered Landscape 2" onstart="" thumburl="panos/1F_Covered_Landscape2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="105.403" vlookat="5.228" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1F_Covered_Landscape2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1F_Covered_Landscape2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Covered Landscape" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="97.235" atv="11.915" linkedscene="scene_1f_covered_landscape" />
+
+	</scene>
+
+	<scene name="scene_1F_Covered_Landscape" title="1F Covered Landscape" onstart="" thumburl="panos/1F_Covered_Landscape.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="93.440" vlookat="19.192" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1F_Covered_Landscape.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1F_Covered_Landscape.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-23.477" atv="30.835" linkedscene="scene_1f_lobby" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Covered Landscape" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="71.590" atv="7.525" linkedscene="scene_1f_covered_landscape_2" />
+
+	</scene>
+
+	<scene name="scene_1F_Function_Room" title="1F Function Room" onstart="" thumburl="panos/1F_Function_Room.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="103.172" vlookat="3.376" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1F_Function_Room.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1F_Function_Room.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Changing Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="48.834" atv="7.002" linkedscene="scene_1f_changing_room" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="GYM" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="148.273" atv="22.465" linkedscene="scene_1f_gym" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-32.595" atv="13.675" linkedscene="scene_1f_lobby" />
+		<hotspot name="spot4" style="skin_maphotspotstyle" ath="78.081" atv="8.962" linkedscene="scene_1f_function_room 3" />
+
+	</scene>
+	<scene name="scene_1F_Function_Room 3" title="1F Function Room 3" onstart="" thumburl="panos/1F_Function_Room_3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="95.997" vlookat="24.965" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1F_Function_Room_3.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1F_Function_Room_3.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle"  text="GYM" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="52.254" atv="11.255" linkedscene="scene_1f_gym" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Changing room"  onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="157.577" atv="25.720" linkedscene="scene_1f_changing_room" />
+		<hotspot name="spot3" style="skin_hotspotstyle"  text="Exit" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="88.388" atv="9.036" linkedscene="scene_1f_function_room" />
+
+
+	</scene>
+
+	<scene name="scene_1F_GYM" title="1F GYM" onstart="" thumburl="panos/1F_GYM.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="96.487" vlookat="3.740" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1F_GYM.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1F_GYM.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Changing Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="82.791" atv="11.606" linkedscene="scene_1f_locker" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Function Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-74.269" atv="25.916" linkedscene="scene_1f_function_room" />
+
+	</scene>
+
+	<scene name="scene_1F_LiftCar_60_light" title="1F LiftCar 60%light" onstart="" thumburl="panos/1F_LiftCar_60_light.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="92.571" vlookat="8.364" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1F_LiftCar_60_light.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1F_LiftCar_60_light.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="To 12F" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="123.787" atv="-13.463" linkedscene="scene_12f_liftcar_60_light" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="90.627" atv="36.798" linkedscene="scene_1f_lobby" />
+		<hotspot name="spot3" style="skin_hotspotdownstyle" text="To GF" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="58.385" atv="42.736" linkedscene="scene_gf_liftcar_60_light" />
+
+	</scene>
+
+	<scene name="scene_1F_Lobby" title="1F Lobby" onstart="" thumburl="panos/1F_Lobby.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="118.788" vlookat="5.358" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1F_Lobby.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1F_Lobby.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Covered Landscape" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="170.000" atv="1.527" linkedscene="scene_1f_covered_landscape" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="36.188" atv="26.393" linkedscene="scene_1f_liftcar_60_light" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Club House" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="78.332" atv="8.308" linkedscene="scene_1f_function_room" />
+
+	</scene>
+
+	<scene name="scene_1F_Locker" title="1F Locker" onstart="" thumburl="panos/1F_Locker.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="99.726" vlookat="3.104" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1F_Locker.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1F_Locker.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Exit" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="94.525" atv="6.466" linkedscene="scene_1f_gym" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Changing Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="174.640" atv="4.814" linkedscene="scene_1f_changing_room" />
+
+	</scene>
+
+	<scene name="scene_GF_CarLift" title="GF CarLift" onstart="" thumburl="panos/GF_CarLift.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-8.934" vlookat="5.797" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_CarLift.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_CarLift.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Covered Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-29.555" atv="7.176" linkedscene="scene_gf_planter" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="15.255" atv="7.757" linkedscene="scene_gf_lobby" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Car Gate" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-83.037" atv="7.635" linkedscene="scene_gf_car_gate" />
+
+	</scene>
+
+	<scene name="scene_GF_Landscape" title="GF Landscape" onstart="" thumburl="panos/GF_Landscape.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="95.385" vlookat="-3.587" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_Landscape.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_Landscape.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="97.924" atv="11.254" linkedscene="scene_gf_lobby" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Covered Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="149.951" atv="5.354" linkedscene="scene_gf_planter" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Transformer Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="18.890" atv="8.007" linkedscene="scene_gf_landsacpe_1" />
+		<hotspot name="spot4" style="skin_hotspotstyle" text="Landscape Area 2" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="170.970" atv="5.806" linkedscene="scene_gf_landsacpe_3" />
+
+	</scene>
+
+	<scene name="scene_GF_LiftCar_50_light" title="GF LiftCar 50%light" onstart="" thumburl="panos/GF_LiftCar_50_light.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_LiftCar_50_light.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_LiftCar_50_light.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_GF_LiftCar_60_light" title="GF LiftCar 60%light" onstart="" thumburl="panos/GF_LiftCar_60_light.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="92.597" vlookat="12.156" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_LiftCar_60_light.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_LiftCar_60_light.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="90.812" atv="43.108" linkedscene="scene_gf_lobby" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="To 1F" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="132.324" atv="-14.497" linkedscene="scene_1f_liftcar_60_light" />
+
+	</scene>
+
+	<scene name="scene_GF_Lobby" title="GF Lobby" onstart="" thumburl="panos/GF_Lobby.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="79.188" vlookat="17.113" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_Lobby.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_Lobby.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Covered Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-97.297" atv="20.138" linkedscene="scene_gf_planter" />
+		<hotspot name="spot2" style="skin_hotspotleftstyle" text="Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="47.252" atv="-1.578" linkedscene="scene_gf_landscape" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-174.745" atv="15.507" linkedscene="scene_gf_liftcar_60_light" />
+		<hotspot name="spot4" style="skin_maphotspotstyle" ath="-147.593" atv="18.989" linkedscene="scene_gf_lobby_corner_2" />
+		<hotspot name="spot5" style="skin_maphotspotstyle" ath="138.287" atv="17.420" linkedscene="scene_gf_lobby_corner_1" />
+		<hotspot name="spot6" style="skin_maphotspotstyle" ath="-45.482" atv="18.606" linkedscene="scene_gf_lobby_corner_3" />
+		<hotspot name="spot7" style="skin_maphotspotstyle" ath="43.075" atv="17.960" linkedscene="scene_gf_lobby_corner4" />
+
+	</scene>
+	<scene name="scene_gf_mailbox" title="GF Mail Box" onstart="" thumburl="panos/GF_MailBox.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="110.311" vlookat="27.589" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_MailBox.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_MailBox.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="58.377" atv="39.619" linkedscene="scene_gf_lobby" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-179.524" atv="35.084" linkedscene="scene_gf_liftcar_60_light" />
+		
+		<hotspot name="spot4" style="skin_maphotspotstyle" ath="51.641" atv="13.951" linkedscene="scene_gf_lobby_corner_3" />
+		<hotspot name="spot5" style="skin_maphotspotstyle" ath="94.987" atv="8.910" linkedscene="scene_gf_lobby_corner_3" />
+		<hotspot name="spot3" style="skin_maphotspotstyle" ath="151.287" atv="18.807" linkedscene="scene_gf_lobby_corner_1" />
+
+	</scene>
+    
+	<scene name="scene_GF_Planter" title="GF Planter" onstart="" thumburl="panos/GF_Planter.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="89.812" vlookat="2.500" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_Planter.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_Planter.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="85.310" atv="8.133" linkedscene="scene_gf_lobby" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="52.138" atv="4.844" linkedscene="scene_gf_landscape" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Car Lift" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="127.691" atv="5.781" linkedscene="scene_gf_carlift" />
+		<hotspot name="spot4" style="skin_hotspotstyle" text="Entrance" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-94.241" atv="15.886" linkedscene="scene_gf_maingate" />
+
+	</scene>
+    <scene name="scene_GF_Car_Gate" title="GF Car Gate" onstart="" thumburl="panos/GF_Car_Gate.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="92.894" vlookat="1.270" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_Car_Gate.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_Car_Gate.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Main Gate" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="6.262" atv="0.989" linkedscene="scene_gf_maingate" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Car Lift" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="90.345" atv="25.290" linkedscene="scene_gf_carlift" />
+
+	</scene>
+
+	<scene name="scene_GF_Landsacpe_2" title="GF Landsacpe 2" onstart="" thumburl="panos/GF_Landerscape2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="8.993" vlookat="0.158" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_Landerscape2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_Landerscape2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-171.461" atv="8.516" linkedscene="scene_gf_landscape" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="165.528" atv="6.470" linkedscene="scene_gf_lobby" />
+
+	</scene>
+	<scene name="scene_GF_Landsacpe_1" title="GF Landsacpe 1" onstart="" thumburl="panos/GF_Landerscape1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-182.312" vlookat="-0.582" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_Landerscape1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_Landerscape1.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-171.773" atv="5.554" linkedscene="scene_gf_landscape" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="171.701" atv="5.295" linkedscene="scene_gf_lobby" />
+
+	</scene>
+
+	<scene name="scene_GF_Landsacpe_3" title="GF Landsacpe 3" onstart="" thumburl="panos/GF_Landerscape3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="303.688" vlookat="13.837" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_Landerscape3.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_Landerscape3.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-88.975" atv="5.707" linkedscene="scene_gf_landscape" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-50.949" atv="6.846" linkedscene="scene_gf_lobby" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Car Lift" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-29.164" atv="5.295" linkedscene="scene_gf_carlift" />
+
+	</scene>
+
+	<scene name="scene_GF_Lobby_Corner_1" title="GF Lobby Corner 1" onstart="" thumburl="panos/GF_Lobby_Corner_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="72.432" vlookat="17.484" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_Lobby_Corner_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_Lobby_Corner_1.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="29.844" atv="25.338" linkedscene="scene_gf_liftcar_60_light" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="38.656" atv="15.086" linkedscene="scene_gf_lobby_corner_2" />
+		<hotspot name="spot3" style="skin_maphotspotstyle" ath="89.069" atv="8.865" linkedscene="scene_gf_lobby_corner_3" />
+		<hotspot name="spot4" style="skin_maphotspotstyle" ath="133.290" atv="6.386" linkedscene="scene_gf_lobby_corner4" />
+
+	</scene>
+
+	<scene name="scene_GF_Lobby_Corner_2" title="GF Lobby Corner 2" onstart="" thumburl="panos/GF_Lobby_Corner_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="99.091" vlookat="25.359" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_Lobby_Corner_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_Lobby_Corner_2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="92.124" atv="10.626" linkedscene="scene_gf_lobby_corner_1" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="53.242" atv="14.151" linkedscene="scene_gf_lobby_corner_3" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="175.080" atv="45.811" linkedscene="scene_gf_liftcar_60_light" />
+		<hotspot name="spot4" style="skin_maphotspotstyle" ath="151.987" atv="16.957" linkedscene="scene_gf_lobby_corner_1" />
+
+	</scene>
+
+	<scene name="scene_GF_Lobby_Corner_3" title="GF Lobby Corner 3" onstart="" thumburl="panos/GF_Lobby_Corner_3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="108.911" vlookat="5.296" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_Lobby_Corner_3.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_Lobby_Corner_3.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="143.326" atv="14.950" linkedscene="scene_gf_lobby_corner_2" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Covered Landscape" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="171.500" atv="22.723" linkedscene="scene_gf_planter" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="To Lift Car" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="131.431" atv="11.411" linkedscene="scene_gf_liftcar_60_light" />
+		<hotspot name="spot4" style="skin_hotspotstyle" text="Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="16.677" atv="17.474" linkedscene="scene_gf_landscape" />
+		<hotspot name="spot5" style="skin_maphotspotstyle" ath="99.785" atv="11.405" linkedscene="scene_gf_lobby_corner_1" />
+		<hotspot name="spot6" style="skin_maphotspotstyle" ath="36.050" atv="17.923" linkedscene="scene_gf_lobby_corner4" />
+
+	</scene>
+	
+	<scene name="scene_GF_Lobby_Corner4" title="GF Lobby Corner 4" onstart="" thumburl="panos/GF_Lobby_Corner4.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="108.911" vlookat="5.296" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/GF_Lobby_Corner4.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/GF_Lobby_Corner4.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="35.226" atv="11.279" linkedscene="scene_gf_lobby_corner_1" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="77.989" atv="9.917" linkedscene="scene_gf_lobby_corner_2" />
+		<hotspot name="spot3" style="skin_maphotspotstyle" ath="132.676" atv="15.565" linkedscene="scene_gf_lobby_corner_3" />
+		
+
+	</scene>
+	
+    <scene name="scene_12F_Bathroom_1" title="12F Bathroom 1" onstart="" thumburl="panos/12F_Bathroom_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Bathroom_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Bathroom_1.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_12F_Bathroom_2" title="12F Bathroom 2" onstart="" thumburl="panos/12F_Bathroom_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="129.897" vlookat="9.709" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Bathroom_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Bathroom_2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Open Kitchen" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="179.876" atv="21.832" linkedscene="scene_12f_flat_c" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="15.314" atv="34.405" linkedscene="scene_12f_bathroom_3" />
+
+	</scene>
+
+	<scene name="scene_12F_Bathroom_3" title="12F Bathroom 3" onstart="" thumburl="panos/12F_Bathroom_3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180.630" vlookat="27.236" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Bathroom_3.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Bathroom_3.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Open Kitchen" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="168.439" atv="21.680" linkedscene="scene_12f_flat_c" />
+
+	</scene>
+
+	<scene name="scene_12F_BedRoom_Corner_1" title="12F BedRoom Corner 1" onstart="" thumburl="panos/12F_BedRoom_Corner_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="7.393" vlookat="22.481" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_BedRoom_Corner_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_BedRoom_Corner_1.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-36.053" atv="26.925" linkedscene="scene_12f_bathroom" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="45.891" atv="31.432" linkedscene="scene_12f_new_corner" />
+
+	</scene>
+
+	<scene name="scene_12F_BedRoom_Corner_2" title="12F BedRoom Corner 2" onstart="" thumburl="panos/12F_BedRoom_Corner_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="133.084" vlookat="20.981" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_BedRoom_Corner_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_BedRoom_Corner_2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="54.115" atv="40.839" linkedscene="scene_12f_bedroom_corner_1" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="137.127" atv="26.897" linkedscene="scene_12f_bathroom" />
+
+	</scene>
+
+	<scene name="scene_12F_Living_Room_Corner_1" title="12F Living Room Corner 1" onstart="" thumburl="panos/12F_Living_Room_Corner_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="179.891" vlookat="23.829" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Living_Room_Corner_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Living_Room_Corner_1.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="113.055" atv="29.887" linkedscene="scene_12f_living_room_corner_2" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Living Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="179.514" atv="34.628" linkedscene="scene_12f_living_room_2" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="162.848" atv="24.318" linkedscene="scene_12f_lobby_flat_c_bedroom" />
+		<hotspot name="spot4" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-175.187" atv="18.833" linkedscene="scene_12f_bathroom" />
+
+	</scene>
+
+	<scene name="scene_12F_Living_Room_Corner_2" title="12F Living Room Corner 2" onstart="" thumburl="panos/12F_Living_Room_Corner_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-0.633" vlookat="17.100" fovtype="MFOV" fov="120.000" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_Living_Room_Corner_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_Living_Room_Corner_2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="48.940" atv="31.575" linkedscene="scene_12f_living_room_corner_1" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Living Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))"  ath="-45.992" atv="36.985" linkedscene="scene_12f_living_room_2" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))"  ath="-49.734" atv="15.158" linkedscene="scene_12f_lobby" />
+		
+
+	</scene>
+
+	<scene name="scene_19F_Corridor" title="19F Corridor" onstart="" thumburl="panos/19F_Corridor.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="103.741" vlookat="12.914" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Corridor.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Corridor.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Bedroom 2" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="127.253" atv="48.404" linkedscene="scene_19f_bedroom_3" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Bedroom 1" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="101.624" atv="32.956" linkedscene="scene_19f_bedroom_2" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Master Bedroom" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="84.183" atv="24.767" linkedscene="scene_19f_masterbedroom" />
+		<hotspot name="spot4" style="skin_hotspotstyle" text="Living Room" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-109.507" atv="33.207" linkedscene="scene_19f_living_room" />
+
+	</scene>
+
+	<scene name="scene_19F_Kitchen_1" title="19F Kitchen 1" onstart="" thumburl="panos/19F_Kitchen_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="97.018" vlookat="21.767" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Kitchen_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Kitchen_1.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="89.324" atv="41.346" linkedscene="scene_19f_kitchen" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="-113.155" atv="18.626" linkedscene="scene_19f_living_room_2" />
+		<hotspot name="spot3" style="skin_maphotspotstyle" ath="-40.018" atv="10.816" linkedscene="scene_19f_living_room_ver1" />
+		<hotspot name="spot4" style="skin_hotspotstyle" text="Corridor" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-170.494" atv="40.752" linkedscene="scene_19f_corridor" />
+
+	</scene>
+	
+	<scene name="scene_19F_Bathroom_2" title="19F Bathroom 2" onstart="" thumburl="panos/19F_Bathroom_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-17.629" vlookat="27.589" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Bathroom_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Bathroom_2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-23.472" atv="40.185" linkedscene="scene_19f_corridor" />
+
+	</scene>
+
+	<scene name="scene_19F_Bedroom1_Corner1" title="19F Bedroom1 Corner1" onstart="" thumburl="panos/19F_Bedroom1_Corner1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="79.333" vlookat="28.440" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Bedroom1_Corner1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Bedroom1_Corner1.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="147.683" atv="35.489" linkedscene="scene_19f_bedroom1_corner2" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="60.360" atv="31.824" linkedscene="scene_19f_corridor" />
+
+	</scene>
+
+	<scene name="scene_19F_Bedroom1_Corner2" title="19F Bedroom1 Corner2" onstart="" thumburl="panos/19F_Bedroom1_Corner2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="113.708" vlookat="19.479" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Bedroom1_Corner2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Bedroom1_Corner2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="58.944" atv="38.386" linkedscene="scene_19f_bedroom1_corner1" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Corridor" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="118.064" atv="26.464" linkedscene="scene_19f_corridor" />
+
+	</scene>
+
+	<scene name="scene_19F_Bedroom2_Corner1" title="19F Bedroom2 Corner1" onstart="" thumburl="panos/19F_Bedroom2_Corner1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="428.003" vlookat="21.464" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Bedroom2_Corner1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Bedroom2_Corner1.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="-6.094" atv="33.625" linkedscene="scene_19f_bedroom2_corner2" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Corridor" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="107.050" atv="26.653" linkedscene="scene_19f_corridor" />
+
+	</scene>
+
+	<scene name="scene_19F_Bedroom2_Corner2" title="19F Bedroom2 Corner2" onstart="" thumburl="panos/19F_Bedroom2_Corner2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="106.747" vlookat="17.851" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Bedroom2_Corner2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Bedroom2_Corner2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="153.683" atv="30.145" linkedscene="scene_19f_bedroom2_corner1" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Corridor" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="71.000" atv="22.447" linkedscene="scene_19f_corridor" />
+
+	</scene>
+	<scene name="scene_12F_NEW_Corner" title="12F NEW Corner" onstart="" thumburl="panos/12F_NEW_Corner.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-132.371" vlookat="27.589" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/12F_NEW_Corner.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12F_NEW_Corner.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-103.215" atv="28.974" linkedscene="scene_12f_bathroom" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="148.716" atv="34.320" linkedscene="scene_12f_bedroom_corner_1" />
+
+	</scene>
+
+	<scene name="scene_19F_Living_Room_2" title="19F Living Room 2" onstart="" thumburl="panos/19F_Living_Room_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="97.063" vlookat="17.376" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Living_Room_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Living_Room_2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="86.417" atv="11.624" linkedscene="scene_19f_living_room_ver1" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Lift Lobby" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="120.144" atv="10.073" linkedscene="scene_19f_lobby" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Kitchen" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="160.827" atv="19.219" linkedscene="scene_19f_kitchen_1" />
+		<hotspot name="spot4" style="skin_hotspotstyle" text="Corridor" css="color:#FFFFFF;font-size:10;font-family:Arial;text-align:center;" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-177.741" atv="21.799" linkedscene="scene_19f_corridor" />
+
+	</scene>
+
+	<scene name="scene_19F_Lobby_2" title="19F Lobby 2" onstart="" thumburl="panos/19F_Lobby_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="145.335" vlookat="13.341" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_Lobby_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_Lobby_2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Living Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="115.437" atv="30.325" linkedscene="scene_19f_living_room" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="To LiftCar" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="168.753" atv="36.568" linkedscene="scene_19f_lift_car" />
+
+	</scene>
+
+	<scene name="scene_19F_masterbedroom_corner_1" title="19F masterbedroom corner 1" onstart="" thumburl="panos/19F_masterbedroom_corner_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="78.939" vlookat="12.335" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_masterbedroom_corner_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_masterbedroom_corner_1.tiles/pano_%s.jpg" />
+		</image>
+		
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Bedroom (3)" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-173.612" atv="16.001" linkedscene="scene_19f_br3" />
+		<hotspot name="spot3" style="skin_hotspotstyle" text="Master Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-162.237" atv="20.144" linkedscene="scene_19f_masterbathroom" />
+
+	</scene>
+
+	<scene name="scene_19F_masterbedroom_corner_2" title="19F masterbedroom corner 2" onstart="" thumburl="panos/19F_masterbedroom_corner_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="77.100" vlookat="13.952" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/19F_masterbedroom_corner_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/19F_masterbedroom_corner_2.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_maphotspotstyle" ath="55.551" atv="24.984" linkedscene="scene_19f_masterbedroom_corner_1" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Master Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-70.254" atv="37.936" linkedscene="scene_19f_masterbathroom" />
+
+	</scene>
+	
+	
+</krpano>
