@@ -794,7 +794,7 @@
 			<cube url="panos/12F_BedRoom_Corner_1.tiles/pano_%s.jpg" />
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-36.053" atv="26.925" linkedscene="scene_12f_bathroom" />
-		<hotspot name="spot2" style="skin_maphotspotstyle" ath="45.891" atv="31.432" linkedscene="scene_12f_new_corner" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="48.995" atv="19.727" linkedscene="scene_12f_new_corner" />
 
 	</scene>
 
@@ -840,7 +840,7 @@
 		<hotspot name="spot1" style="skin_maphotspotstyle" ath="-178.556" atv="23.513" linkedscene="scene_12f_living_room_corner_1" />
 		
 		<hotspot name="spot3" style="skin_hotspotstyle" text="Lift Lobby" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))"  ath="74.564" atv="15.628" linkedscene="scene_12f_lobby" />
-		<hotspot name="spot2" text="Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" style="skin_hotspotstyle" ath="59.460" atv="42.950" linkedscene="scene_12f_lobby_flat_c_bedroom" />
+		<hotspot name="spot2" text="Bedroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" style="skin_hotspotstyle" ath="56.494" atv="17.951" linkedscene="scene_12f_lobby_flat_c_bedroom" />
 		
 
 	</scene>
@@ -955,7 +955,7 @@
 			<cube url="panos/12F_NEW_Corner.tiles/pano_%s.jpg" />
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" text="Bathroom" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-103.215" atv="28.974" linkedscene="scene_12f_bathroom" />
-		<hotspot name="spot2" style="skin_maphotspotstyle" ath="148.716" atv="34.320" linkedscene="scene_12f_bedroom_corner_1" />
+		<hotspot name="spot2" style="skin_maphotspotstyle" ath="145.568" atv="20.173" linkedscene="scene_12f_bedroom_corner_1" />
 
 	</scene>
 
