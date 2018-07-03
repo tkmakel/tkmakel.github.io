@@ -564,7 +564,7 @@
 		<image>
 			<cube url="panos/GF_LiftCar_60_light.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="91.311" atv="14.508" linkedscene="scene_gf_lobby" />
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="90.812" atv="43.108" linkedscene="scene_gf_lobby" />
 		<hotspot name="spot2" style="skin_hotspotstyle" text="To 1F" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="132.324" atv="-14.497" linkedscene="scene_1f_liftcar_60_light" />
 
 	</scene>

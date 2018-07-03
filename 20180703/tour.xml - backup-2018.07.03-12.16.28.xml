@@ -536,7 +536,7 @@
 		<image>
 			<cube url="panos/GF_Landscape.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="57.418" atv="11.604" linkedscene="scene_gf_lobby_corner4" />
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="57.418" atv="11.604" linkedscene="scene_gf_lobby" />
 		<hotspot name="spot2" style="skin_hotspotstyle" text="Covered Landscape Area" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="130.097" atv="7.900" linkedscene="scene_gf_planter" />
 		<hotspot name="spot3" style="skin_hotspotstyle" text="Transformer Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="-4.597" atv="8.210" linkedscene="scene_gf_landsacpe_1" />
 		<hotspot name="spot4" style="skin_hotspotstyle" text="Landscape Area 2" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="156.432" atv="5.747" linkedscene="scene_gf_landsacpe_3" />
@@ -564,7 +564,7 @@
 		<image>
 			<cube url="panos/GF_LiftCar_60_light.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="91.311" atv="14.508" linkedscene="scene_gf_lobby" />
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Entrance Foyer" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="90.812" atv="43.108" linkedscene="scene_gf_lobby" />
 		<hotspot name="spot2" style="skin_hotspotstyle" text="To 1F" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="132.324" atv="-14.497" linkedscene="scene_1f_liftcar_60_light" />
 
 	</scene>
