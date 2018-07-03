@@ -876,7 +876,7 @@
 	
 	<scene name="scene_19F_Bathroom_2" title="19F Bathroom 2" onstart="" thumburl="panos/19F_Bathroom_2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-53.664" vlookat="27.589" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="13.558" vlookat="5.304" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/19F_Bathroom_2.tiles/preview.jpg" />
 
