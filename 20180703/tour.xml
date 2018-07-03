@@ -126,7 +126,7 @@
 		<image>
 			<cube url="panos/12F_Lobby_FLAT_C_Bedroom.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" text="Living Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="10.913" atv="17.270" linkedscene="scene_12f_living_room_2" />
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Living Room" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="10.913" atv="17.270" linkedscene="scene_12f_flat_c" />
 		<hotspot name="spot2" style="skin_maphotspotstyle" ath="64.035" atv="26.505" linkedscene="scene_12f_new_corner" />
 		<hotspot name="spot3" style="skin_maphotspotstyle" ath="110.700" atv="30.527" linkedscene="scene_12f_bedroom_corner_1" />
 
@@ -141,8 +141,8 @@
 		<image>
 			<cube url="panos/12F_Lobby_FLAT_F.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" text="Flat C" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="96.654" atv="13.499" linkedscene="scene_12f_flat_c" />
-		<hotspot name="spot2" style="skin_hotspotstyle" text="Flat A" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="87.980" atv="8.027" linkedscene="scene_12f_lobby_flat_a" />
+		<hotspot name="spot1" style="skin_hotspotstyle" text="Flat C" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="91.311" atv="6.887" linkedscene="scene_12f_flat_c" />
+		<hotspot name="spot2" style="skin_hotspotstyle" text="Flat A" onloaded="do_crop_animation(64,64, 60);add_all_the_time_tooltip_for_VR()" onclick="loadscene(get(linkedscene))" ath="86.780" atv="3.154" linkedscene="scene_12f_lobby_flat_a" />
 
 	</scene>
 
